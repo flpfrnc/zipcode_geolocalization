@@ -7,7 +7,7 @@ const Map = (props) => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: `${import.meta.env.VITE_GOOGLE_API_KEY_PROTECTED}`,
+    googleMapsApiKey: `${import.meta.env.VITE_GOOGLE_API_KEY}`,
   });
 
   return (
