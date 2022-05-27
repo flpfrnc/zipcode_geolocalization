@@ -20,7 +20,7 @@ const Home = () => {
 
   const onInputChange = (e) => {
     e.preventDefault();
-    setCep(e.target.value);
+    setCep(e.target.value.replace(/\D/,''));
   };
 
   return (
