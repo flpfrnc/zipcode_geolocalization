@@ -1,0 +1,30 @@
+.map {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+}
+
+.map__marker {
+  font-weight: 700;
+}
+
+.loading__block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map__Container{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .map {
+    height: 50vh;
+    width: 100vw;
+  }
+} 

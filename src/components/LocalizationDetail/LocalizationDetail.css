@@ -1,0 +1,29 @@
+.detail__Wrapper {
+  width: 50vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.localization__Detail {
+  width: 500px;
+  height: 200px; 
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0.5px #757272cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localization__Detail p {
+  margin: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .detail__Wrapper {
+    width: 100vw;
+    height: 50vh;
+  }
+}
