@@ -28,7 +28,6 @@ function DetailPage() {
         .then(function (data) {
           if (data.status === "OK") {
             data.results.map((result) => {
-              console.log(result);
               setLatitude(result.geometry.location.lat);
               setLongitude(result.geometry.location.lng);
               setAddress(result.formatted_address);
