@@ -14,8 +14,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("cep", cep);
-    navigate("/map");
+    navigate(`/map/${cep}`);
   };
 
   const onInputChange = (e) => {

@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/map" element={<DetailPage />} />
+          <Route path="/map/:cep" element={<DetailPage />} />
         </Routes>
       </BrowserRouter>
     </div>

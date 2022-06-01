@@ -1,7 +1,7 @@
 import HomeButton from "../../components/HomeButton/HomeButton";
 import Map from "../../components/Map/Map";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import LocalizationDetail from "../../components/LocalizationDetail/LocalizationDetail";
 import "./DetailPage.css";
@@ -10,6 +10,8 @@ function DetailPage() {
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
   const [address, setAddress] = useState("");
+
+  const { cep } = useParams()
 
   const navigate = useNavigate();
 
@@ -45,7 +47,7 @@ function DetailPage() {
   }
 
   useEffect(() => {
-    getCoordinates(localStorage.getItem("cep"));
+    getCoordinates(cep);
   }, []);
 
   return (

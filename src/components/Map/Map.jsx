@@ -1,6 +1,5 @@
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import "react-toastify/dist/ReactToastify.min.css";
-import LocalizationDetail from "../LocalizationDetail/LocalizationDetail";
 import "./Map.css";
 
 const Map = (props) => {  
